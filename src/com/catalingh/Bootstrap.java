@@ -15,7 +15,7 @@ public class Bootstrap {
     myMenu.displayMenu();
 
         myMenu.searchByProductName("Chicken");
-
+        myMenu.searchByIngredients("Chicken");
 
 
     }

@@ -3,6 +3,7 @@ package com.catalingh;
 public class Salad implements Ingredient {
 
     private double price = 3.0d;
+    private String ingredientName = "Salad";
     private String category = "Vegetables";
 
     public Salad(double price, String category) {
@@ -17,6 +18,11 @@ public class Salad implements Ingredient {
 
     public Salad() {
         this.price = this.price;
+    }
+
+    @Override
+    public String getIngredientName() {
+        return ingredientName;
     }
 
     @Override
