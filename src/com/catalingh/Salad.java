@@ -1,6 +1,6 @@
 package com.catalingh;
 
-public class Salad extends Ingredient {
+public class Salad implements Ingredient {
 
     private double price = 3.0d;
     private String category = "Vegetables";
@@ -16,5 +16,23 @@ public class Salad extends Ingredient {
     }
 
     public Salad() {
+        this.price = this.price;
+    }
+
+    @Override
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public void setCategory(String category) {
+        this.category = category;
     }
 }

@@ -9,8 +9,8 @@ public class Bootstrap {
         myMenu.addProduct(new Product("Cheese Salad",new Cheese(),new Salad()));
         myMenu.addProduct(new Product("Greek Salad",new Cheese(),new Salad(),new Onions()));
 
-
     myMenu.displayMenu();
+
 
     }
 }

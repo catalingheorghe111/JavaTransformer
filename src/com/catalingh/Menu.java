@@ -13,7 +13,7 @@ public class Menu {
 
     public void displayMenu() {
         for (Product p : myMenu) {
-            System.out.println(p+" price: "+p.getProductPrice());
+            System.out.println(p+" price: "+p.calculatePrice());
         }
     }
 
