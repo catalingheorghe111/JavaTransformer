@@ -13,10 +13,19 @@ public class Menu {
 
     public void displayMenu() {
         for (Product p : myMenu) {
-            System.out.println(p+" price: "+p.calculatePrice());
+            System.out.println(p + " price: " + p.calculatePrice());
         }
     }
 
+    public void searchByProductName(String name) {
+        System.out.println("\nMenu items names that contain the keywork '" + name+"':");
+        for (Product p : myMenu) {
+            if (p.toString().contains(name)) {
+                System.out.println(p + " price: " + p.calculatePrice());
+            }
+        }
+
+    }
 
 }
 

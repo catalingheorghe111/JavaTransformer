@@ -5,35 +5,27 @@ import java.util.List;
 
 public class Product {
     private String productName;
-    private double productPrice;
     List<Ingredient> ingredientList = new ArrayList<Ingredient>();
 
-    public double calculatePrice(){
-        double priceAcc=0;
-        for(Ingredient i: ingredientList){
-            priceAcc+=i.getPrice();
+    public double calculatePrice() {
+        double priceAcc = 0;
+        for (Ingredient i : ingredientList) {
+            priceAcc += i.getPrice();
         }
         return priceAcc;
     }
 
 
-    Product (String productName,Ingredient ... ingredient){
-        this.productName=productName;
-        for (Ingredient i:ingredient){
+    Product(String productName, Ingredient... ingredient) {
+        this.productName = productName;
+        for (Ingredient i : ingredient) {
             ingredientList.add(i);
         }
     }
 
-    Product(){
+    Product() {
     }
 
-    public void setProductPrice(double productPrice) {
-        this.productPrice = productPrice;
-    }
-
-    public double getProductPrice() {
-        return productPrice;
-    }
 
     @Override
     public String toString() {
@@ -41,8 +33,8 @@ public class Product {
     }
 
     public void addIngredient(Ingredient... ingredient) {
-        for(Ingredient i:ingredient)
-        ingredientList.add(i);
+        for (Ingredient i : ingredient)
+            ingredientList.add(i);
     }
 
     public String getProductName() {
